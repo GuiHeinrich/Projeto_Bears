@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex: auto;
+    flex-direction: column; /* Divide o header verticalmente */
+
+}
+
+#info-banner-container {
+    background-color: #d0875d; /* Cor de fundo laranja avermelhado */
+    color: antiquewhite; /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto dentro do banner */
+    font-size: 10px; /* Tamanho da fonte ajustado para legibilidade */
+    padding: 5px; /* Espaçamento interno ao redor do texto */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    width: 100%; /* Garante que o banner ocupe toda a largura disponível */
+    margin: 0; /* Remove margens externas para evitar espaçamento indesejado */
+    line-height: 1.4; /* Ajusta a altura da linha para melhor leitura */
+    font-weight: bold;
+}
+
+
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui logo e informações */
+    background-color: #1A1826;
+    padding: 10px;
+
+}
+
+.logo {
+    max-height: 35px; /* Limita a altura da imagem do logo */
+}
+
+.header-info p {
+    margin: 0;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+/* Estilos da parte inferior do header */
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centraliza o conteúdo da parte inferior */
+    background-color: #1A1826;
+    padding: 20px;
+
+
+
+/* Estilos da logo */
+.logo {
+    max-height: 25px; /* Limita a altura da imagem do logo */
+}
+
+/* Estilos da navegação */
+nav {
+    display: flex; /* Usa flexbox para layout */
+    text-align: center; /* Centraliza a navegação */
+    margin: 0px 0; /* Adiciona margem acima e abaixo da navegação */
+}
+
+nav a {
+    color: #9b2e2e; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 10px; /* Margem entre os links */
+    font-size: 13px; /* Tamanho da fonte dos links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza o título principal */
+h1 {
+    color: #7711d6; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+    padding-top: 5px; /* Adiciona um espaçamento acima do título */
+    font-size: 15px;
+}
+
+/* Estiliza os parágrafos */
+p {
+    line-height: 1.6; /* Aumenta a altura da linha para melhor leitura */
+    margin: 0 20px; /* Adiciona margem horizontal nos parágrafos */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+/* Estiliza o formulário */
+form {
+    max-width: 600px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px; /* Adiciona preenchimento ao formulário */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo branca com transparência */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+form label {
+    display: block; /* Exibe o rótulo como bloco */
+    margin: 10px 0 5px; /* Adiciona margem acima e abaixo do rótulo */
+}
+
+form input, form textarea {
+    width: 100%; /* Define a largura dos campos de entrada e área de texto */
+    padding: 8px; /* Adiciona preenchimento aos campos de entrada e área de texto */
+    margin-bottom: 10px; /* Adiciona margem abaixo dos campos de entrada e área de texto */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+form input[type="submit"] {
+    background-color: #3498db; /* Cor de fundo do botão de envio */
+    color: white; /* Cor do texto do botão de envio */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px 0; /* Adiciona preenchimento acima e abaixo do rodapé */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo leve para o rodapé */
+}
