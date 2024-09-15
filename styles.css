@@ -1,137 +1,207 @@
 body {
-    margin: 0px;
+    margin: 0;
     color: #333;
     font-family: Arial, sans-serif;
-}
 
-header {
+  }
+  
+  header {
     position: fixed;
     display: flex;
-    flex: auto;
-    flex-direction: column; /* Divide o header verticalmente */
-
-}
-
-#info-banner-container {
-    background-color: #d0875d; /* Cor de fundo laranja avermelhado */
-    color: antiquewhite; /* Cor do texto em branco */
-    text-align: center; /* Centraliza o texto dentro do banner */
-    font-size: 10px; /* Tamanho da fonte ajustado para legibilidade */
-    padding: 5px; /* Espaçamento interno ao redor do texto */
-    box-sizing: border-box; /* Inclui padding e bordas na largura total */
-    width: 100%; /* Garante que o banner ocupe toda a largura disponível */
-    margin: 0; /* Remove margens externas para evitar espaçamento indesejado */
-    line-height: 1.4; /* Ajusta a altura da linha para melhor leitura */
+    flex-direction: column; 
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    background-color: #fff; 
+   ;
+  }
+  
+  #info-banner-container {
+    background-color: #d0875d;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    line-height: 1.4;
     font-weight: bold;
-}
-
-
-
-.header-middle {
+  }
+  
+  .header-middle {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui logo e informações */
+    justify-content: space-between;
     background-color: #1A1826;
     padding: 10px;
-
-}
-
-.logo {
-    max-height: 35px; /* Limita a altura da imagem do logo */
-}
-
-.header-info p {
+  
+  }
+  
+  .logo {
+    max-height: 25px;
+  }
+  
+  .header-info p {
     margin: 0;
     font-size: 14px;
     color: antiquewhite;
-}
+  }
 
-/* Estilos da parte inferior do header */
-.header-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Centraliza o conteúdo da parte inferior */
+  .header-bottom {
     background-color: #1A1826;
     padding: 20px;
+  }
+  
+  .logo {
+    max-height: 30px;
+  }
+  
+  nav {
+    z-index: 500;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin: 0px 0;
+  }
+  
+  nav a {
+    color: #9b2e2e;
+    text-decoration: none;
+    margin: 0 10px; 
+    font-size: 13px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline; 
+  }
+  
 
-
-
-/* Estilos da logo */
-.logo {
-    max-height: 25px; /* Limita a altura da imagem do logo */
-}
-
-/* Estilos da navegação */
-nav {
-    display: flex; /* Usa flexbox para layout */
-    text-align: center; /* Centraliza a navegação */
-    margin: 0px 0; /* Adiciona margem acima e abaixo da navegação */
-}
-
-nav a {
-    color: #9b2e2e; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
-    margin: 0 10px; /* Margem entre os links */
-    font-size: 13px; /* Tamanho da fonte dos links */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estiliza o título principal */
-h1 {
-    color: #7711d6; /* Cor do texto do título */
-    text-align: center; /* Centraliza o título */
-    padding-top: 5px; /* Adiciona um espaçamento acima do título */
+  h1 {
+    color: #7711d6;
+    text-align: center; 
+    padding-top: 5px;
     font-size: 15px;
-}
+  }
+  
+  
+  p {
+    line-height: 1.6;
+    margin: 0 20px;
+    font-size: 16px; 
+  }
+  
+ 
+  form {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+  }
+  
+  form label {
+    display: block; 
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+  }
+  
+  form input[type="submit"] {
+    background-color: #3498db;
+    color: white; 
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+ 
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 
-/* Estiliza os parágrafos */
-p {
-    line-height: 1.6; /* Aumenta a altura da linha para melhor leitura */
-    margin: 0 20px; /* Adiciona margem horizontal nos parágrafos */
-    font-size: 16px; /* Define o tamanho da fonte */
-}
 
-/* Estiliza o formulário */
-form {
-    max-width: 600px; /* Define a largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário horizontalmente */
-    padding: 20px; /* Adiciona preenchimento ao formulário */
-    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo branca com transparência */
-    border-radius: 8px; /* Bordas arredondadas */
-}
 
-form label {
-    display: block; /* Exibe o rótulo como bloco */
-    margin: 10px 0 5px; /* Adiciona margem acima e abaixo do rótulo */
-}
+  .searchBox {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+    border-radius: 30px;
 
-form input, form textarea {
-    width: 100%; /* Define a largura dos campos de entrada e área de texto */
-    padding: 8px; /* Adiciona preenchimento aos campos de entrada e área de texto */
-    margin-bottom: 10px; /* Adiciona margem abaixo dos campos de entrada e área de texto */
-    border: 1px solid #ddd; /* Adiciona uma borda leve */
-    border-radius: 4px; /* Bordas arredondadas */
-}
+  }
 
-form input[type="submit"] {
-    background-color: #3498db; /* Cor de fundo do botão de envio */
-    color: white; /* Cor do texto do botão de envio */
-    border: none; /* Remove a borda padrão do botão */
-    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
-    padding: 10px 20px; /* Adiciona preenchimento ao botão */
-    border-radius: 4px; /* Bordas arredondadas */
-}
+  .searchBox.ativar{
+    width: 250px;
+  }
 
-form input[type="submit"]:hover {
-    background-color: #2980b9; /* Cor de fundo do botão ao passar o mouse */
-}
+  .searchBox .lupaSearch {
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #1A1826;
+    border-radius: 50%;
+  }
 
-/* Estilo do rodapé */
-footer {
-    text-align: center; /* Centraliza o texto do rodapé */
-    padding: 10px 0; /* Adiciona preenchimento acima e abaixo do rodapé */
-    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo leve para o rodapé */
-}
+  .searchBox .buttonClose{
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .searchBox .buttonClose i{
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  
+  .searchBox .lupaSearch i{
+  font-size: 20px;
+  }
+
+  .searchBox .inputSearch {
+    position: absolute;
+    left: 35px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 32px;
+    
+  }
+
+  .searchBox .inputSearch input{
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    font-family: ;
+    
+  }
+
+  @font-face {
+    font-family: Orkney;
+    src: url(Fonte/orkney/Orkney-Regular.otf);
+  }
+  .fonte-externa {
+    font-family: Orkney
+  }

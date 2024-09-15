@@ -1,6 +1,6 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona o container do banner onde o banner será inserido
+document.addEventListener('DOMContentLoaded', () => {
+    
     const bannerContainer = document.getElementById('info-banner-container');
     
     const phrases = [
@@ -10,23 +10,31 @@ document.addEventListener('DOMContentLoaded', function() {
         'Oferta relâmpago: 30% de desconto em nossa nova coleção!'
     ];
     
-    // Cria o elemento do banner
     const infoBanner = document.createElement('div');
-    infoBanner.className = 'info-banner'; // Adiciona a classe de estilo
+    infoBanner.className = 'info-banner';
     
-    // Função para alterar o texto do banner
     function updateBannerText() {
-        // Escolhe uma frase aleatória da lista
+        
         const randomIndex = Math.floor(Math.random() * phrases.length);
         infoBanner.innerHTML = phrases[randomIndex];
     }
     
-    // Define o banner inicial
     updateBannerText();
     
-    // Atualiza o banner a cada 5 segundos
     setInterval(updateBannerText, 5000);
     
-    // Insere o banner no container
     bannerContainer.appendChild(infoBanner);
 });
+
+
+let boxBuscar = document.querySelector('.searchBox');
+let lupa = document.querySelector('.lupaSearch');
+let btnFechar = document.querySelector('.buttonClose');
+
+lupa.addEventListener('click', ()=>{
+    boxBuscar.classList.add('ativar')
+})
+
+btnFechar.addEventListener('click', ()=>{
+    boxBuscar.classList.remove('ativar')
+})
