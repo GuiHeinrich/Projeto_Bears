@@ -30,11 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
 let boxBuscar = document.querySelector('.searchBox');
 let lupa = document.querySelector('.lupaSearch');
 let btnFechar = document.querySelector('.buttonClose');
+let buttonConfirm = false;
 
 lupa.addEventListener('click', ()=>{
     boxBuscar.classList.add('ativar')
+    buttonConfirm = false;
 })
 
 btnFechar.addEventListener('click', ()=>{
     boxBuscar.classList.remove('ativar')
+    buttonConfirm = true;
 })

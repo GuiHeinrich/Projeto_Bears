@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
 
   }
-  
+
   header {
     position: fixed;
     display: flex;
@@ -33,11 +33,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1A1826;
+    background-color: #0D2601;
     padding: 10px;
   
   }
   
+
+
   .logo {
     max-height: 25px;
   }
@@ -49,12 +51,19 @@ body {
   }
 
   .header-bottom {
-    background-color: #1A1826;
+    background-color: #0D2601;
     padding: 20px;
+  }
+
+  .pageBar {
+
   }
   
   .logo {
-    max-height: 30px;
+    position: relative; 
+    left: 670px;
+    max-height: 80px;
+
   }
   
   nav {
@@ -66,10 +75,11 @@ body {
   }
   
   nav a {
-    color: #9b2e2e;
-    text-decoration: none;
+    color: antiquewhite;
+    font-weight: lighter;
     margin: 0 10px; 
-    font-size: 13px;
+    font-size: 15px;
+    
   }
   
   nav a:hover {
@@ -123,7 +133,7 @@ body {
   }
   
   form input[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: antiquewhite;
   }
   
  
@@ -136,40 +146,48 @@ body {
 
 
   .searchBox {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: #fff;
+    color: #0D2601;
     overflow: hidden;
+    right: 120px;
+    top: 53px;
     display: flex;
     justify-content: space-between;
     position: relative;
     transition: .5s;
-    border-radius: 30px;
-
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
   }
 
   .searchBox.ativar{
-    width: 250px;
+    width: 300px;
   }
 
-  .searchBox .lupaSearch {
-    min-width: 35px;
-    height: 35px;
+  .searchBox .lupaSearch{
+    min-width: 40px;
+    height: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: #1A1826;
-    border-radius: 50%;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color:#0D2601;
+
+    
   }
 
   .searchBox .buttonClose{
-    min-width: 35px;
-    height: 35px;
+    min-width: 38px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
   }
 
   .searchBox .buttonClose i{
@@ -183,19 +201,17 @@ body {
 
   .searchBox .inputSearch {
     position: absolute;
-    left: 35px;
-    width: calc(100% - 120px);
+    left: 45px;
+    width: calc(100% - 150px);
     height: 100%;
-    line-height: 32px;
-    
+    line-height: 40px;
   }
 
   .searchBox .inputSearch input{
     border: 0;
     outline: 0;
-    font-size: 15px;
-    font-family: ;
-    
+    font-size: 16px;
+    font-family: Orkney;
   }
 
   @font-face {
@@ -205,3 +221,29 @@ body {
   .fonte-externa {
     font-family: Orkney
   }
+
+  .perfilIcone {
+    font-size: 30px;
+    position: absolute;
+    top: 110px;
+    right: 83px;
+}
+
+  .carrinhoIcone {
+    font-size: 23px;
+    position: absolute;
+    top: 113px;
+    right: 35px;
+  
+  }
+
+.coffeNome {
+  
+  position: absolute;
+  width: 180px;
+  height: auto;
+    right: 10px;
+    left: 650px;
+    top: 85px;
+   
+}
