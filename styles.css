@@ -1,24 +1,13 @@
 body {
     margin: 0;
-    color: #333;
+    color: black;
     font-family: Arial, sans-serif;
-
+    background-image: url(./assets/IMAGEM\ DE\ FUNDO\ SITE\ 2.jpgs);
   }
 
-  header {
-    position: fixed;
-    display: flex;
-    flex-direction: column; 
-    width: 100%;
-    top: 0; 
-    left: 0; 
-    background-color: #fff; 
-   ;
-  }
-  
   #info-banner-container {
-    background-color: #d0875d;
-    color: antiquewhite;
+    background-color: #203C34;
+    color: #fff;
     text-align: center;
     font-size: 10px;
     padding: 5px;
@@ -28,156 +17,73 @@ body {
     line-height: 1.4;
     font-weight: bold;
   }
-  
-  .header-middle {
+
+  header {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background: #F8E8D6;
+    position: sticky;
+    width: 100%;
+    height: 130px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #0D2601;
-    padding: 10px;
-  
-  }
-  
+    border-bottom: 2px solid #98642c;
+    border-bottom-style: dashed;
 
+    top: 0;
+  }
+
+  header, nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header#cabecalho img#logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+    margin: auto;
+  }
 
   .logo {
-    max-height: 25px;
-  }
-  
-  .header-info p {
-    margin: 0;
-    font-size: 14px;
-    color: antiquewhite;
-  }
-
-  .header-bottom {
-    background-color: #0D2601;
-    padding: 20px;
-  }
-
-  .pageBar {
-
-  }
-  
-  .logo {
-    position: relative; 
-    left: 670px;
-    max-height: 80px;
-
-  }
-  
-  nav {
-    z-index: 500;
     position: absolute;
     display: flex;
-    text-align: center;
-    margin: 0px 0;
+    width: 200px;
+    height: auto;
   }
   
-  nav a {
-    color: antiquewhite;
-    font-weight: lighter;
-    margin: 0 10px; 
-    font-size: 15px;
-    
-  }
-  
-  nav a:hover {
-    text-decoration: underline; 
-  }
-  
-
-  h1 {
-    color: #7711d6;
-    text-align: center; 
-    padding-top: 5px;
-    font-size: 15px;
-  }
-  
-  
-  p {
-    line-height: 1.6;
-    margin: 0 20px;
-    font-size: 16px; 
-  }
-  
- 
-  form {
-    max-width: 600px; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-  }
-  
-  form label {
-    display: block; 
-    margin: 10px 0 5px;
-  }
-  
-  form input, form textarea {
-    width: 100%; 
-    padding: 8px;
-    margin-bottom: 10px; 
-    border: 1px solid #ddd; 
-    border-radius: 4px; 
-  }
-  
-  form input[type="submit"] {
-    background-color: #3498db;
-    color: white; 
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 4px;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: antiquewhite;
-  }
-  
- 
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-
-
   .searchBox {
     width: 40px;
     height: 40px;
     background-color: #fff;
-    color: #0D2601;
+    color: #F8E8D6;
     overflow: hidden;
-    right: 120px;
-    top: 53px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 80px;
+    right: 115px;
     transition: .5s;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
   }
 
   .searchBox.ativar{
-    width: 300px;
+    width: 270px;
   }
 
   .searchBox .lupaSearch{
     min-width: 40px;
     height: 40px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    background-color:#0D2601;
-
-    
+    background-color:#F8E8D6;
   }
 
   .searchBox .buttonClose{
@@ -187,7 +93,6 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
   }
 
   .searchBox .buttonClose i{
@@ -196,7 +101,7 @@ body {
   }
   
   .searchBox .lupaSearch i{
-  font-size: 20px;
+  font-size: 21px;
   }
 
   .searchBox .inputSearch {
@@ -214,36 +119,66 @@ body {
     font-family: Orkney;
   }
 
-  @font-face {
-    font-family: Orkney;
-    src: url(Fonte/orkney/Orkney-Regular.otf);
+  .perfilIcone {
+    font-size: 28px;
+    position: absolute;
+    top: 85px;
+    right: 70px;
+}
+
+  .carrinhoIcone {
+    font-size: 22px;
+    position: absolute;
+    top: 88px;
+    right: 25px;
+  
   }
+
+  @font-face {
+    font-family: montserrat;
+    src: url(Fonte/dosis/Dosis-SemiBold.otf);
+  }
+
+  .font-nav {
+    font-family: montserrat;
+  }
+
   .fonte-externa {
     font-family: Orkney
   }
 
-  .perfilIcone {
-    font-size: 30px;
-    position: absolute;
-    top: 110px;
-    right: 83px;
+
+#menu {
+  background-color: #F8E8D6;
+  position: absolute;
+  font-family: montserrat;
+  left: 25px;
+  top: 93px;
 }
 
-  .carrinhoIcone {
-    font-size: 23px;
-    position: absolute;
-    top: 113px;
-    right: 35px;
-  
-  }
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
 
-.coffeNome {
-  
-  position: absolute;
-  width: 180px;
-  height: auto;
-    right: 10px;
-    left: 650px;
-    top: 85px;
-   
+#menu li {
+  margin-right: 30px;
+}
+
+#menu a {
+  color: #acacb0;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: #98642c; 
+}
+
+#menu li:last-child {
+  margin-right: 0;
 }
