@@ -1,9 +1,58 @@
 body {
     margin: 0;
-    color: black;
-    font-family: Arial, sans-serif;
-    background-image: url(./assets/IMAGEM\ DE\ FUNDO\ SITE\ 2.jpgs);
+
   }
+
+  .content {
+    position: fixed;
+    background-color: #FEF5ED;
+    min-height: calc(100vh - 130px); 
+    padding: 20px;
+}
+
+.decoration_1 {
+  position: absolute;
+  display: flex;
+  opacity: 50%;
+  top: 400px;
+ right: 55%; 
+  transform: translateX(-50%);
+  z-index: 0; 
+  width: 40%;
+  height: auto;
+}
+
+.decoration_2 {
+  position: absolute;
+  display: flex;
+  opacity: 50%;
+  top: 0px;
+ right: -18%; 
+  transform: translateX(-50%);
+  z-index: 0; 
+  width: 30%;
+  height: auto;
+}
+
+
+.decoration_3 {
+  position: absolute;
+  display: flex;
+  opacity: 50%;
+  top: -0px;
+ right: 73%; 
+  transform: translateX(-50%);
+  z-index: 0; 
+  width: 20%;
+  height: auto;
+}
+
+
+.homeText {
+  color: #203C34;
+  position: relative;
+  z-index: 1;
+}
 
   #info-banner-container {
     background-color: #203C34;
