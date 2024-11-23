@@ -18,7 +18,7 @@
         <img id="logo" src="./assets/BEARS CAFÉ.png" alt="Minha Logo" class="logo">
 
         <div class="perfilIcone">
-            <a href="profile.html"><i class="bi bi-person" style="color: #98642c;"></i></a>
+            <i id="openPopup" class="bi bi-person" style="color: #98642c; cursor: pointer;"></i>
         </div>
 
         <div class="carrinhoIcone">
@@ -32,12 +32,12 @@
 
             <div class="inputSearch">
                 <input type="text" name="" id="" placeholder="Buscar">
-            </div><!--inputSearch-->
+            </div>
 
             <div class="buttonClose">
                 <i class="bi bi-x-lg" style="color: #1A1826;"></i>
-            </div><!--buttonClose-->
-        </div><!--searchBox-->
+            </div>
+        </div>
 
         <nav id="menu">
             <ul class="Montserrat">
@@ -60,7 +60,36 @@
             <p>À medida que o sol se põe, o Bear's Café se transforma em um vibrante pub das 18h à 1h. Sob a supervisão de nossos talentosos barmen, você poderá desfrutar de uma variedade de bebidas, desde coquetéis criativos a clássicos irresistíveis, acompanhados por um cardápio detalhadamente preparado para sua noite. Venha relaxar com amigos, compartilhar risadas e aproveitar as melhores experiências gastronômicas, tanto de dia quanto de noite. Estamos ansiosos para recebê-lo!</p>
         </div>
     </div>
-
+    
+    <div id="popup" class="popup" >
+        <div class="main-login">
+            
+        <div class="left-login">
+            <h1>Sua próxima xícara está logo ali.<br>Faça o login!</h1>
+            <img src="./assets/CAFETERIA.svg" class="left-login-image" alt="Cafeteria animação">
+        </div>
+            
+        <div class="right-login">
+            <button id="closePopup" class="close-button">X</button>
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+        
+        
+        
+        </div>
+      </div>
+      
 
     <script src="scripts.js"></script>
 </body>

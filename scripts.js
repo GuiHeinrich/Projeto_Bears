@@ -41,3 +41,18 @@ btnFechar.addEventListener('click', ()=>{
     boxBuscar.classList.remove('ativar')
     buttonConfirm = true;
 })
+
+
+const openPopupButton = document.getElementById("openPopup");
+const popup = document.getElementById("popup");
+const closePopupButton = document.getElementById("closePopup");
+
+
+openPopupButton.addEventListener("click", () => {
+    popup.style.display = "flex"; // Exibe o popup
+});
+
+
+closePopupButton.addEventListener("click", () => {
+    popup.style.display = "none"; // Fecha o popup
+});
