@@ -43,16 +43,24 @@ btnFechar.addEventListener('click', ()=>{
 })
 
 
-const openPopupButton = document.getElementById("openPopup");
-const popup = document.getElementById("popup");
-const closePopupButton = document.getElementById("closePopup");
+document.addEventListener('DOMContentLoaded', () => {
+    const mainLogin = document.querySelector('.main-login');
+    const registerLink = document.querySelectorAll('.register-link');
+    const openPopupButton = document.getElementById('openPopup');
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.getElementById('closePopup');
 
+    openPopupButton.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
 
-openPopupButton.addEventListener("click", () => {
-    popup.style.display = "flex"; // Exibe o popup
-});
+    closePopupButton.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
 
-
-closePopupButton.addEventListener("click", () => {
-    popup.style.display = "none"; // Fecha o popup
+    registerLink.forEach(link => {
+        link.addEventListener('click', () => {
+            mainLogin.classList.toggle('flip');
+        });
+    });
 });
