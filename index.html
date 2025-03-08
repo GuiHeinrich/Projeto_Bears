@@ -6,11 +6,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <title>Bear's Café</title>
+    <title>Bears Café</title>
 </head>
 <body>
-
-
     <header id="cabecalho">
 
         <div id="info-banner-container"></div>
@@ -18,17 +16,17 @@
         <img id="logo" src="./assets/BEARS CAFÉ.png" alt="Minha Logo" class="logo">
 
         <div class="perfilIcone">
-            <i id="openPopup" class="bi bi-person" style="color: #98642c; cursor: pointer;"></i>
+            <i id="openPopup" class="bi bi-person" style="color: #95826B; cursor: pointer;"></i>
         </div>
 
         <div class="carrinhoIcone">
-            <a href="carrinho.html"> <i class="bi bi-bag" style="color: #98642c;"></i> </a>
+            <a href="carrinho.html"> <i class="bi bi-bag" style="color: #95826B;"></i> </a>
         </div>
 
         <div id="pesquisa" class="searchBox">
             <div class="lupaSearch">
-                <i class="bi bi-search" style="color: #98642c;"></i>
-            </div><!--lupaSearch-->
+                <i class="bi bi-search" style="color: #95826B;"></i>
+            </div>
 
             <div class="inputSearch">
                 <input type="text" name="" id="" placeholder="Buscar">
@@ -40,7 +38,7 @@
         </div>
 
         <nav id="menu">
-            <ul class="Montserrat">
+            <ul>
                 <li><a href="about.html">SOBRE</a></li>
                 <li><a href="menu.html">CARDÁPIO</a></li>
                 <li><a href="contact.html">CONTATO</a></li>
@@ -51,16 +49,50 @@
     </header>   
     
     <div class="content">
-        <img id="decoration_1" src="./assets/DESENHO_CAFÉ - Copia.png" alt="Decoração 1" class="decoration_1">
-        <img id="decoration_2" src="./assets/DESENHO_CAFÉ - Copia (2).png" alt="Decoração 2" class="decoration_2">
-        <img id="decoration_4" src="./assets/decor_4.png" alt="Decoração 4" class="decoration_4">
-        <div class="homeText">
-            <h1>Bem-vindo ao Bear's Café!</h1>
-            <p>Aqui, a magia do café encontra o aconchego de um lar. Durante o dia, das 7h às 17h, nossa cafeteria clássica oferece uma seleção cuidadosamente elaborada de cafés, chás, pães fresquinhos, bolos deliciosos, cannolis e ovos preparados com carinho. Cada visita é uma oportunidade de saborear momentos especiais em um ambiente acolhedor, perfeito para iniciar o dia ou fazer uma pausa à tarde.</p>
-            <p>À medida que o sol se põe, o Bear's Café se transforma em um vibrante pub das 18h à 1h. Sob a supervisão de nossos talentosos barmen, você poderá desfrutar de uma variedade de bebidas, desde coquetéis criativos a clássicos irresistíveis, acompanhados por um cardápio detalhadamente preparado para sua noite. Venha relaxar com amigos, compartilhar risadas e aproveitar as melhores experiências gastronômicas, tanto de dia quanto de noite. Estamos ansiosos para recebê-lo!</p>
+
+        <div class="ImagemFundo"> 
+            <img id="imgfundo" src="./assets/ImagemFundo.png" alt="Imagem Fundo" class="imgfundo">
+            <div class="boas-vindas"><span class="boasvindas">BOAS VINDAS AO </span><span class="BLACK">BEARS CAFÉ</span></div>
+        </div>
+
+        <div>
+            <div><span class="homeTitle">Nosso melhor para você!</span></div>
+
+                <p><span class="homeMain">A Bears Café oferece bebidas clássicas de café, sodas italianas, frappés e chás especiais. Sua vitrine de doces e salgados é um convite ao sabor. Sempre inovando, busca surpreender os clientes com qualidade, criatividade e cordialidade.</span></p>
         </div>
     </div>
-    
+
+    <div class="carousel">
+        <button id="prevBtn">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="assets/Carrossel1.png" alt="Cafeteria">
+                    <img src="assets/Carrossel2.png" alt="Cafeteria">
+                    <img src="assets/Carrossel3.png" alt="Prato">
+                    <img src="assets/Carrossel4.png" alt="Prato">
+                    <img src="assets/Carrossel5.png" alt="Prato">
+                    <img src="assets/Carrossel6.png" alt="Prato">
+                    <img src="assets/Carrossel7.png" alt="Prato">
+                </div>
+            </div>
+        <button id="nextBtn">&#10095;</button>
+    </div>
+
+    <div class="cardapio">
+        <div class="cardapioBox">
+            <div><span class="cardapioText">Conheça o nosso </span><span class="cardapioBText">MENU</span></div>
+        </div>
+        <div class="CardIconBox">
+            <div class="card-icon-container">
+                <img id="cardIcon1" src="./assets/CARDAPIO ICON.png" alt="Icone Cardapio" class="cardIcon1">
+                <p class="language-text">Português</p>
+            </div>
+            <div class="card-icon-container">
+                <img id="cardIcon2" src="./assets/CARDAPIO ICON.png" alt="Icone Cardapio" class="cardIcon2">
+                <p class="language-text">Inglês</p>
+            </div>
+        </div>
+
     <div id="popup" class="popup" >
         <div class="main-login">
             
@@ -72,38 +104,41 @@
         <div class="right-login">
             <button id="closePopup" class="close-button">X</button>
                 <div class="card-login">
-                     <h1>LOGIN</h1>
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+                    <div class="cardLoginBox">
+                        <h1>LOGIN</h1>
+                        <div class="textfield">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário">
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <p class="register-text">Não tem uma conta? <span id="registerLink" class="register-link">Registre-se aqui!</span></p>
                     </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
-                    </div>
-                    <p class="register-text">Não tem uma conta? <span id="registerLink" class="register-link">Registre-se aqui!</span></p>
-                    <button class="btn-login">Login</button>
+                        <button class="btn-login">Login</button>
                 </div>
 
                 <div class="card-register">
-                    <h1>REGISTRO</h1>
-                    <div class="textfield">
-                        <label for="email">E-mail</label>
-                        <input type="text" name="email" placeholder="E-mail">
-                    </div>
+                    <div class="cardRegisterBox">
+                        <h1>REGISTRO</h1>
+                            <div class="textfield">
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" placeholder="E-mail">
+                            </div>
 
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
-                    </div>
+                            <div class="textfield">
+                                <label for="usuario">Usuário</label>
+                                <input type="text" name="usuario" placeholder="Usuário">
+                            </div>
 
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
+                            <div class="textfield">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" placeholder="Senha">
+                            </div>
+                        <p class="register-text">Já tem uma conta? <span id="registerLink" class="register-link">Faça seu Login aqui!</span></p>
                     </div>
-
-                    <p class="register-text">Já tem uma conta? <span id="registerLink" class="register-link">Faça seu Login aqui!</span></p>
-                    <button class="btn-register">Registrar</button>
+                        <button class="btn-register">Registrar</button>
                 </div>
                 </div>
         </div>

@@ -4,59 +4,114 @@ body {
   }
 
   .content {
-    position: fixed;
-    background-color: #FEF5ED;
-    min-height: calc(100vh - 130px); 
-    padding: 20px;
+    position: relative;
+    background-color: #FEF5EA;
+    min-height: 100vh;
+    padding-top: 670px;
+    z-index:-1;
+  }
+
+  .homeTitle {
+    padding-bottom: 15px;
+    color: #2C1105;
+    font-family: SSPBLACK;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.decoration_1 {
-  position: absolute;
+.homeMain {
+    color: #2C1105;
+    font-family: MSSemibold;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    text-align: justify;
+}
+
+.cardapioBox {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
   display: flex;
-  opacity: 50%;
-  top: 400px;
- right: 55%; 
-  transform: translateX(-50%);
-  z-index: 0; 
-  width: 40%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 
-.decoration_2 {
-  position: absolute;
-  display: flex;
-  opacity: 50%;
-  top: 0px;
- right: -18%; 
-  transform: translateX(-50%);
-  z-index: 0; 
-  width: 30%;
-  height: auto;
+.cardapioText {
+  font-family: SSPNormal;
 }
 
-
-.decoration_4 {
-  position: absolute;
-  display: flex;
-  opacity: 50%;
-  top: -0px;
- right: 73%; 
-  transform: translateX(-50%);
-  z-index: 0; 
-  width: 20%;
-  height: auto;
+.cardapioBText {
+  font-family: SSPBLACK;
 }
 
-
-.homeText {
-  color: #203C34;
+.carousel {
   position: relative;
+  max-width: 1480px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #FEF5EA;
+  padding: 20px;
+  top: -520px;
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: calc(25% - 11.25px);
+  flex: 0 0 calc(25% - 11.25px);
+  height: calc(25% - 11.25px);
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
   z-index: 1;
+  border-radius: 5px;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.cardapio {
+  position: absolute;
+  top: 1350px;
+  left: 0;
+  width: 100%;
+  height: 520px; 
+  background-color: #96672F;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 101;
 }
 
   #info-banner-container {
-    background-color: #203C34;
-    color: #fff;
+    background-color: #96672F;
+    color: #2C1105;
     text-align: center;
     font-size: 10px;
     padding: 5px;
@@ -69,15 +124,15 @@ body {
 
   header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    background: #F8E8D6;
-    position: sticky;
+    background: #2C1105;
+    position: fixed;
     width: 100%;
-    height: 130px;
+    height: 115px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #98642c;
+    border-bottom: 2px solid #95826B;
     border-bottom-style: dashed;
-
+    z-index: 100;
     top: 0;
   }
 
@@ -91,7 +146,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 15px;
+    top: 25px;
     bottom: 0;
     margin: auto;
   }
@@ -101,20 +156,86 @@ body {
     display: flex;
     width: 200px;
     height: auto;
+    
   }
   
+.ImagemFundo {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+}
+
+.imgfundo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.boas-vindas {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  color: white;
+  
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.boasvindas {
+    
+    font-family: MSSemibold;
+    font-size: 41px;
+}
+
+.BLACK {
+    font-family: MSBLACK;
+    font-size: 59px;
+}
+
+.CardIconBox {
+  display: flex; 
+  justify-content: center; 
+  gap: 30px; 
+  margin-top: 70px;
+}
+
+.card-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardIcon1, .cardIcon2 {
+  width: 190px;
+  height: auto;
+  margin-bottom: -25px;
+}
+
+.language-text {
+  font-family: SSPNormal; 
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+
   .searchBox {
     width: 40px;
     height: 40px;
-    background-color: #fff;
-    color: #F8E8D6;
+    background-color: #2C1105;
+    color: #2C1105;
     overflow: hidden;
+    outline: none;
+    box-shadow: none;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 80px;
-    right: 115px;
-    transition: .5s;
+    top: 50px;
+    right: 155px;
+    transition: width 0.5s;;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
   }
@@ -132,7 +253,7 @@ body {
     cursor: pointer;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    background-color:#F8E8D6;
+    background-color:#2C1105;
   }
 
   .searchBox .buttonClose{
@@ -171,21 +292,41 @@ body {
   .perfilIcone {
     font-size: 28px;
     position: absolute;
-    top: 85px;
-    right: 70px;
+    top: 56px;
+    right: 105px;
 }
 
   .carrinhoIcone {
     font-size: 22px;
     position: absolute;
-    top: 88px;
-    right: 25px;
+    top: 59px;
+    right: 50px;
   
   }
 
   @font-face {
     font-family: montserrat;
     src: url(Fonte/dosis/Dosis-SemiBold.otf);
+  }
+
+  @font-face {
+    font-family: MSBLACK;
+    src: url(Fonte/montserrat/Montserrat-Black.otf);
+  }
+
+  @font-face {
+    font-family: MSSemibold;
+    src: url(Fonte/montserrat/Montserrat-SemiBold.otf);
+  }
+
+  @font-face {
+    font-family: SSPBLACK;
+    src: url(Fonte/source-serif-pro/SourceSerifPro-Black.otf);
+  }
+
+  @font-face {
+    font-family: SSPNormal;
+    src: url(Fonte/source-serif-pro/SourceSerifPro-Regular.otf);
   }
 
   .font-nav {
@@ -198,11 +339,11 @@ body {
 
 
 #menu {
-  background-color: #F8E8D6;
+  background-color: #2C1105;
   position: absolute;
   font-family: montserrat;
   left: 25px;
-  top: 93px;
+  top: 60px;
 }
 
 #menu ul {
@@ -218,14 +359,14 @@ body {
 }
 
 #menu a {
-  color: #acacb0;
+  color: #95826B;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.3s;
 }
 
 #menu a:hover {
-  color: #98642c; 
+  color: #acacb0; 
 }
 
 #menu li:last-child {
@@ -250,7 +391,7 @@ body {
   width: 90%;
   height: 85%;
   border-radius: 30px;
-  background: #203C34;
+  background: #371d12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +438,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 30px 35px;
-  background: #172b25;
+  background: #2C1105;
   border-radius: 20px;
   border-style: dashed;
   border-color: #F8E8D6;
@@ -307,12 +448,15 @@ body {
   transition: transform 0.6s ease-in-out;
 }
 
-.card-login, .card-register> h1 {
+.cardLoginBox, .cardRegisterBox> h1 {
   color: #F8E8D6;
   font-weight: 800;
-  margin: 0;
+  text-align: center;
+  margin: -5px;
   font-family: montserrat;
 }
+
+
 
 .textfield{
   width: 100%;
@@ -320,7 +464,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .textfield > input {
@@ -349,10 +493,10 @@ body {
   font-family: montserrat;
 }
 
-.btn-login, .btn-register{
-  width: 100%;
+.btn-login {
+  width: 90%;
   padding: 16px 0px;
-  margin: 25px;
+  margin: 132px;
   border: none;
   border-radius: 8px;
   outline: none;
@@ -360,7 +504,24 @@ body {
   font-weight: 800;
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
-  background-color: #0c1714;
+  background-color: #190902;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #0000;
+  font-family: montserrat;
+}
+
+.btn-register{
+  width: 90%;
+  padding: 16px 0px;
+  margin: 185px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #190902;
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #0000;
   font-family: montserrat;
@@ -368,8 +529,8 @@ body {
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 30px;
+  right: 10px;
   font-size: 20px;
   background: none;
   border: none;
@@ -387,7 +548,6 @@ body {
 .register-text {
   color: #F8E8D6;
   font-size: 12px;
-  margin-top: 10px;
   font-family: montserrat;
   text-align: center;
 }
@@ -411,6 +571,23 @@ body {
   transform: rotateY(0);
 }
 
+.cardLoginBox{
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+}
+
+.cardRegisterBox {
+
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+}
+
 .card-register {
   width: 30%;
   height: 75%;
@@ -419,7 +596,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 30px 35px;
-  background: #172b25;
+  background: #2C1105;
   border-radius: 20px;
   border-style: dashed;
   border-color: #F8E8D6;
@@ -427,6 +604,7 @@ body {
   backface-visibility: hidden;
   position: absolute;
   transition: transform 0.6s ease-in-out;
+  
 }
 
 .card-login {
